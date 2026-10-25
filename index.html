@@ -101,7 +101,7 @@ h1 .dates{
 
 .route-art{
   position:absolute;
-  right:-40px;
+  right:24px;
   top:18px;
   width:min(620px,92vw);
   opacity:.5;
@@ -192,7 +192,7 @@ h1 .dates{
 .g-price .small{font-size:.8125rem;color:var(--ink-soft);display:block;margin-top:2px}
 .g-no{color:var(--red);font-weight:500}
 
-[data-view="pp"] .tot-big,[data-view="tot"] .pp-big{display:none}
+body[data-view="pp"] .tot-big,body[data-view="tot"] .pp-big{display:none}
 .price-pair{display:contents}
 
 main{padding:clamp(28px,5vw,56px) 0 20px}
@@ -432,6 +432,9 @@ footer strong{color:var(--ink)}
 @media (min-width:900px) and (max-width:1100px){
   .leg-time{font-size:1.875rem}
 }
+@media (max-width:899px){
+  .route-art{display:none}
+}
 @media (max-width:420px){
   .glance a{grid-template-columns:auto 1fr;}
   .g-price{grid-column:2;text-align:left;display:flex;gap:8px;align-items:baseline}
@@ -552,7 +555,7 @@ footer strong{color:var(--ink)}
         </div>
         <div class="tags">
           <span class="tag stop">1 stop via DEN</span>
-          <span class="tag">Cheapest with a real airline</span>
+          
         </div>
         <div class="legs">
           <div class="leg">
